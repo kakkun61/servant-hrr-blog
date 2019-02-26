@@ -1,0 +1,78 @@
+name: servant-hrr-blog
+version: 0.1.0.0
+github: "kakkun61/servant-hrr-blog"
+license: BSD3
+author: "Kazuki Okamoto"
+maintainer: "kazuki.okamoto@kakkun61.com"
+copyright: "2019 Kazuki Okamoto"
+
+extra-source-files:
+- README.md
+
+# synopsis: Short description of your package
+# category: Web
+# description: Please see the README on GitHub at <https://github.com/kakkun61/servant-hrr-blog#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Wincomplete-uni-patterns
+- -Wincomplete-record-updates
+- -Wmonomorphism-restriction
+- -Wmissing-exported-signatures
+- -Wmissing-home-modules
+- -Wmissing-import-lists
+- -Widentities
+- -Wredundant-constraints
+- -Wpartial-fields
+
+library:
+  source-dirs: src
+  dependencies:
+  - aeson
+  - bytestring
+  - HDBC
+  - HDBC-postgresql
+  - http-media
+  - monad-logger
+  - mtl
+  - persistable-record
+  - product-isomorphic
+  - relational-query
+  - relational-query-HDBC
+  - relational-record
+  - resource-pool
+  - servant-server
+  - template-haskell
+  - text
+  - transformers
+  - unordered-containers
+  - wai
+  default-extensions:
+  - DataKinds
+  - DeriveGeneric
+  - FlexibleContexts
+  - FlexibleInstances
+  - MultiParamTypeClasses
+  - NamedFieldPuns
+  - OverloadedStrings
+  - TemplateHaskell
+  - TypeOperators
+  ghc-options:
+  - -Wmissing-export-lists
+
+executables:
+  servant-hrr:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - servant-hrr-blog
+    - wai-extra
+    - warp

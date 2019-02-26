@@ -1,0 +1,7 @@
+resolver: lts-12.26
+
+packages:
+- .
+
+extra-deps:
+- HDBC-postgresql-2.3.2.6@sha256:6e1636b0414ae7b028a01f1a90cf3e28c14f1df7867cf2615d5357d9abcd6279

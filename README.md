@@ -1,0 +1,1 @@
+This is sample source code of https://kakkun61.hatenablog.com/entry/2019/02/26/Servant_%E3%81%A8_Relational_Record_%E3%81%A7%E3%82%A6%E3%82%A7%E3%83%96%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA .

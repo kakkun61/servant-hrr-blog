@@ -1,0 +1,5 @@
+.stack-work/
+servant-hrr-blog.cabal
+*~
+
+src/ServantHrr/DataSource/Secret.hs
